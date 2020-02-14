@@ -6,6 +6,7 @@ include('../template/navbar.php');
     <div class="container">
         <div class="row">
             <?php
+            //Faire une boucle pour obtenir la liste des candidats 
             foreach ($datas as $data) {
                 $roles = $data->roles[0]->roleid;
                 if ($roles === 5 ) {
