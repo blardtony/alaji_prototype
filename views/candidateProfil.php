@@ -24,7 +24,24 @@ include('../template/navbar.php');
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <div class="card  text-center">
+                    <div class="card-title mt-2">
+                        <h3>Entrer les notes de l'entretien oral</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <p>Critère 1 oral : <input type="number" name="critere1" step="1" min="0" max="1"><span class="error"></span></p>
+                            <p>Critère 2 oral : <input type="number" name="critere2" step="1" min="0" max="1"><span class="error"></span></p>
+                            <p>Critère 3 oral : <input type="number" name="critere3" step="1" min="0" max="1"><span class="error"></span></p>
+                            <p>Critère 4 oral : <input type="number" name="critere4" step="1" min="0" max="1"><span class="error"></span></p>
+                            <input class="btn btn-secondary" type="submit" name="submit" value="Envoie!" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php
             $note1 = $reviewAttempt->questions[0]->mark;
             $note2 = $reviewAttempt->questions[1]->mark;
